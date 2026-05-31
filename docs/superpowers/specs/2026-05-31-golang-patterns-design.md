@@ -573,12 +573,9 @@ func Hedge[T any](ctx context.Context, delay time.Duration, fn func(context.Cont
 **gRPC Patterns**
 ```
 proto/echo.proto  →  generated stubs
-unary/            →  simple unary RPC
-streaming/        →  server-streaming, client-streaming, bidirectional
-interceptors/     →  unary + stream interceptor chain (logging, auth, metrics)
 
+// simple: unary RPC client+server, server-streaming, client-streaming, bidirectional
 // advanced: OTel tracing interceptor, retry interceptor, deadline propagation
-```
 
 **Pub/Sub**
 ```go
