@@ -8,7 +8,7 @@ import (
 type alwaysCommit struct{ committed, aborted bool }
 
 func (a *alwaysCommit) Prepare(_ context.Context, _ string) (Vote, error) { return VoteCommit, nil }
-func (a *alwaysCommit) Commit(_ context.Context, _ string) error { a.committed = true; return nil }
+func (a *alwaysCommit) Commit(_ context.Context, _ string) error          { a.committed = true; return nil }
 
 func (a *alwaysCommit) Abort(_ context.Context, _ string) error { a.aborted = true; return nil }
 
