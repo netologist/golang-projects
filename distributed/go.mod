@@ -1,4 +1,4 @@
-module github.com/netologist/distributed
+module github.com/veribaz/distributed
 
 go 1.25.0
 
