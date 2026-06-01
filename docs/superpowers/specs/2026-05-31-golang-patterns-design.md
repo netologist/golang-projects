@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-31  
 **Status:** Approved  
-**Modules:** `github.com/veribaz/go-patterns` · `github.com/veribaz/distributed`  
+**Modules:** `github.com/netologist/go-patterns` · `github.com/netologist/distributed`  
 **Go version:** 1.22+
 
 ---
@@ -174,7 +174,7 @@ go test ./advanced/... -v
 ### go-patterns/go.mod
 
 ```
-module github.com/veribaz/go-patterns
+module github.com/netologist/go-patterns
 
 go 1.22
 
@@ -188,7 +188,7 @@ Rationale: keep deps minimal. `log/slog` (stdlib since 1.21) replaces zap in sim
 ### distributed/go.mod
 
 ```
-module github.com/veribaz/distributed
+module github.com/netologist/distributed
 
 go 1.22
 

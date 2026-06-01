@@ -39,7 +39,7 @@ use (
 - [ ] **Step 2: Create go-patterns/go.mod**
 
 ```
-module github.com/veribaz/go-patterns
+module github.com/netologist/go-patterns
 
 go 1.22
 
@@ -49,7 +49,7 @@ require golang.org/x/sync v0.7.0
 - [ ] **Step 3: Create distributed/go.mod**
 
 ```
-module github.com/veribaz/distributed
+module github.com/netologist/distributed
 
 go 1.22
 
@@ -5482,7 +5482,7 @@ git commit -m "feat(distributed): scalability patterns — consistent-hashing, l
 // distributed/communication/grpc-patterns/proto/echo.proto
 syntax = "proto3";
 package echo;
-option go_package = "github.com/veribaz/distributed/communication/grpc-patterns/proto";
+option go_package = "github.com/netologist/distributed/communication/grpc-patterns/proto";
 
 service Echo {
   rpc SayHello(HelloRequest) returns (HelloResponse);
@@ -5514,7 +5514,7 @@ import (
 	"net"
 	"time"
 
-	pb "github.com/veribaz/distributed/communication/grpc-patterns/proto"
+	pb "github.com/netologist/distributed/communication/grpc-patterns/proto"
 	"google.golang.org/grpc"
 )
 
@@ -5547,7 +5547,7 @@ import (
 	"log"
 	"time"
 
-	pb "github.com/veribaz/distributed/communication/grpc-patterns/proto"
+	pb "github.com/netologist/distributed/communication/grpc-patterns/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )
